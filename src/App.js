@@ -16,7 +16,7 @@ function App() {
         <CartContextProvider>
             <FilterContextProvider>
                 <Header />
-                <Routes id="theme">
+                <Routes>
                     <Route path="/" element={<Products />} />
                     <Route path="/*" element={<Navigate to="/" />} />
                     <Route path="/:id" element={<Details />} />
