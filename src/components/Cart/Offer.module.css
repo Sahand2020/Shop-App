@@ -1,0 +1,104 @@
+.offer_container {
+    width: 70%;
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 10px;
+}
+
+.offer_container span:first-child {
+    color: #ccc;
+    font-size: 15px;
+}
+
+.offer_box {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.offer_box input {
+    height: 40px;
+    width: 70%;
+    padding-left: 10px;
+    border: none;
+    outline: none;
+    font-size: 16px;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    border: 1px solid #bcbcbc;
+}
+
+.offer_box input::placeholder {
+    color: rgba(0, 0, 0, 0.4);
+}
+
+.offer_box button {
+    width: 30%;
+    height: 40px;
+    border: none;
+    outline: none;
+    background-color: #90c705;
+    color: #fff;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    padding: 5px;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+.offer_box button:hover {
+    font-size: 15px;
+}
+
+.offer_true {
+    color: #90c705;
+}
+
+.offer_false {
+    color: tomato;
+}
+
+@media screen and (min-width: 800px) and (max-width: 900px) {
+
+    .offer_box input {
+        padding-left: 5px;
+    }
+
+    .offer_box input::placeholder {
+        font-size: 14px;
+    }
+
+    .offer_box button {
+        font-size: 12px;
+    }
+
+    .offer_box button:hover {
+        font-size: 12.5px;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .offer_box input,
+    .offer_box button {
+        height: 30px;
+    }
+
+    .offer_box input {
+        padding-left: 5px;
+    }
+
+    .offer_box input::placeholder {
+        font-size: 13px;
+    }
+
+    .offer_box button {
+        font-size: 12px;
+    }
+
+    .offer_box button:hover {
+        font-size: 12.5px;
+    }
+}

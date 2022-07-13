@@ -1,0 +1,37 @@
+.searchBar_box {
+    width: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+}
+
+.searchBar_box input {
+    height: 35px;
+    width: 85%;
+    padding-left: 15px;
+    border: none;
+    outline: none;
+    font-size: 16px;
+    border-radius: 5px 0 0 5px;
+    background-color: #fff;
+    color: rgba(0, 0, 0, 0.6);
+}
+
+.searchBar_box input::placeholder {
+    color: rgba(0, 0, 0, 0.5);
+}
+
+.searchBar_box button {
+    width: 15%;
+    height: 35px;
+    border: none;
+    outline: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #093f1ac4;
+    color: #fff;
+    border-radius: 0 5px 5px 0;
+    font-size: 20px;
+}

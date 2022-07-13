@@ -1,0 +1,63 @@
+.filter_container {
+    width: 100%;
+    max-width: 1300px;
+    margin: 0 auto;
+    padding: 20px 16px 10px;
+    margin-top: 75px;
+}
+
+.filter_btnBox {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    /* background-color: #fff; */
+    background: rgba(255, 255, 255, 0.2);
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+    backdrop-filter: blur(6px);
+    -webkit-backdrop-filter: blur(6px);
+    border: 1px solid rgba(66, 66, 66, 0.386);
+    border-radius: 10px;
+    padding: 10px 10px;
+    box-shadow: rgba(0, 0, 0, 0.08) 0px 5px 20px;
+    overflow: auto;
+}
+
+.filter_btnBox::-webkit-scrollbar {
+    height: 3px;
+}
+
+.filter_btnBox::-webkit-scrollbar-thumb {
+    background-color: #8fc700b6;
+    border-radius: 3px;
+}
+
+.filter_icon {
+    width: 80px;
+    color: #8fc700;
+    padding: 0;
+}
+
+.filter_btn {
+    height: 35px;
+    line-height: 35px;
+    display: block;
+    border-radius: 10px;
+    background-color: #dd7631;
+    border: none;
+    outline: none;
+    color: #fff;
+    font-size: 15px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    padding: 0 20px;
+}
+
+.filter_btn:hover {
+    background-color: #cb300d;
+}
+
+@media screen and (max-width: 576px) {
+    .filter_container {
+        margin-top: 0;
+    }
+}

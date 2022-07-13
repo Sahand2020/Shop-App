@@ -1,0 +1,243 @@
+@font-face {
+    font-family: Rexmone;
+    src: url(../../../public/fonts/rexmone-demo-cufonfonts-webfont/REXMONE-DEMO\ VERSION.woff);
+}
+
+@font-face {
+    font-family: "Titillium Regular";
+    src: url(../../../public/fonts/titillium-cufonfonts-webfont/Titillium-Regular.woff);
+}
+
+.product_container {
+    width: 100%;
+    max-width: 1300px;
+    min-height: 450px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+    row-gap: 20px;
+    padding: 16px;
+}
+
+.welcome {
+    margin: 125px auto 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 1250px;
+    height: 55vh;
+    gap: 50px;
+}
+
+.welcomeText {
+    display: flex;
+    flex-direction: column;
+}
+
+.welcomeText span {
+    font-size: 3.2rem;
+    margin-bottom: 5px;
+    color: rgb(95, 255, 127);
+    font-family: Rexmone, sans-serif;
+}
+
+.welcomeText p {
+    max-width: 60%;
+    text-align: justify;
+    color: rgb(221, 221, 221);
+    font-family: "Titillium Regular", sans-serif;
+    font-size: 1.9rem;
+}
+
+.guide {
+    margin-top: 40px;
+}
+
+.guide button {
+    padding: 15px 40px;
+    border: none;
+    border-radius: 5px;
+    background-color: rgb(0, 244, 93);
+    box-shadow: 0 8px 32px 0 rgba(155, 255, 124, 0.37);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    color: black;
+    font-weight: bold;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: all ease 0.4s;
+}
+
+.guide button:hover {
+    transform: translateY(-5px);
+    transition: all ease 0.5s;
+}
+
+.not_products {
+    position: absolute;
+    top: 65%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+.products_empty_title {
+    font-size: 18px;
+    color: rgba(0, 0, 0, 0.6);
+    text-align: center;
+}
+
+.products_empty_img {
+    width: 230px;
+    opacity: 0.6;
+}
+
+.products_empty_guide {
+    font-size: 16px;
+    color: tomato;
+    text-align: center;
+}
+
+.search_header_small {
+    display: none;
+}
+
+/* Media  */
+
+@media screen and (min-width: 576px) {
+    .product_container {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+@media screen and (max-width: 576px) {
+    .search_header_small {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: 95px;
+    }
+}
+
+@media screen and (min-width: 660px) {
+    .search_Container {
+        display: none;
+    }
+}
+
+@media screen and (min-width: 992px) {
+    .product_container {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .product_container {
+        grid-template-columns: repeat(5, 1fr);
+    }
+}
+
+@media screen and (max-width: 1300px) {
+    .welcome {
+        gap: 0;
+        max-width: 1000px;
+    }
+    .welcome img {
+        width: 400px;
+    }
+
+    .welcomeText span {
+        font-size: 2.9rem;
+    }
+
+    .welcomeText p {
+        font-size: 1.4rem;
+    }
+}
+
+@media screen and (max-width: 1050px) {
+    .welcome {
+        max-width: 800px;
+        gap: 20px;
+    }
+    .welcome img {
+        width: 350px;
+    }
+
+    .welcomeText span {
+        font-size: 2.5rem;
+    }
+
+    .welcomeText p {
+        font-size: 1.2rem;
+    }
+
+    .guide button {
+        padding: 10px 20px;
+    }
+}
+
+@media screen and (max-width: 850px) {
+    .welcome {
+        max-width: 750px;
+        gap: 50px;
+    }
+    .welcome img {
+        width: 265px;
+    }
+
+    .welcomeText span {
+        font-size: 2rem;
+    }
+
+    .welcomeText p {
+        font-size: 1rem;
+    }
+
+    .guide button {
+        padding: 8px 15px;
+        font-size: 0.8rem;
+    }
+}
+
+@media screen and (max-width: 685px) {
+    .welcome {
+        max-width: 700px;
+        flex-direction: column;
+    }
+    .welcome img {
+        width: 270px;
+    }
+    .welcomeText {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 2rem;
+        margin-top: 30px;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .welcome img {
+        width: 230px;
+    }
+    .welcomeText {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 2rem;
+    }
+
+    .welcomeText span {
+        font-size: 1.6rem;
+    }
+
+    .welcomeText p {
+        font-size: 0.8rem;
+    }
+}

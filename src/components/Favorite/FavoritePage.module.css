@@ -1,0 +1,138 @@
+.favorite-wrapper {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 16px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    justify-content: center;
+}
+
+.favorite_removeAll {
+    width: 200px;
+    height: 35px;
+    line-height: 35px;
+    display: block;
+    margin-top: 15px;
+    border-radius: 5px;
+    background-color: tomato;
+    border: none;
+    outline: none;
+    color: #fff;
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.favorite_remove_container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 16px;
+}
+
+.favorite_removeAll:hover {
+    background-color: rgb(245, 40, 4);
+}
+
+.favorite_container {
+    width: 100%;
+    max-width: 1200px;
+    min-height: 450px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+    row-gap: 20px;
+    padding: 16px;
+}
+
+.backIcon {
+    margin-right: 5px;
+}
+
+.favorite_empty {
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 35px;
+}
+
+.favorite_empty_title {
+    font-size: 23px;
+    color: #e1e1e1;
+    font-weight: bold;
+}
+
+.favorite_empty_img {
+    width: 250px;
+    margin-top: 60px;
+}
+
+.favorite_container_linkBar {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 70px 16px 0;
+}
+
+.favorite_linkBar {
+    width: 100%;
+    padding: 15px 15px;
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.08) 0px 5px 20px;
+}
+
+.favorite_linkBar span {
+    color: rgb(245, 40, 4);
+    font-weight: bold;
+}
+
+.favorite_backLink {
+    transition: all 0.3s ease;
+    color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.favorite_backLink:hover {
+    color: #ff3535;
+    padding-left: 5px;
+}
+
+@media screen and (max-width: 500px) {
+    .favorite_empty_img {
+        width: 200px;
+    }
+}
+
+@media screen and (min-width: 500px) {
+    .favorite_container {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+@media screen and (min-width: 800px) {
+    .favorite_container {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+@media screen and (min-width: 1024px) {
+    .favorite_container {
+        grid-template-columns: repeat(5, 1fr);
+    }
+}
