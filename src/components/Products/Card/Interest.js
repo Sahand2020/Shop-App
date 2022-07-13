@@ -1,4 +1,6 @@
 import React, { useContext } from "react";
+
+// Icons
 import { BsHeart, BsHeartFill } from "react-icons/bs";
 
 // Context

@@ -1,6 +1,8 @@
 import React, { useContext } from "react";
-import { GrClose } from "react-icons/gr";
 import { Link } from "react-router-dom";
+
+// Icons
+import { GrClose } from "react-icons/gr";
 
 // Context
 import { CartContext } from "../../contexts/CartContextProvider";
