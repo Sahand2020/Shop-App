@@ -19,7 +19,7 @@
 
 .cart_priceBox {
     width: 100%;
-    max-height: 680px;
+    max-height: 670px;
     /* background-color: #f0f5ff; */
     background: rgba(255, 255, 255, 0.25);
     box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
@@ -59,12 +59,14 @@
 
 .cart_offer span:last-child {
     font-size: 25px;
-    color: tomato;
+    color: #61ff8d;
+    text-shadow: 0 0 25px #61ff8d;
 }
 
 .cart_send span:last-child {
     font-size: 25px;
-    color: #cbff49;
+    color: #89ff39;
+    text-shadow: 0 0 25px #89ff39;
 }
 
 .cart_button_buy,
